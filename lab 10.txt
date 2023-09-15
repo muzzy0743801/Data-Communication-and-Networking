@@ -1,0 +1,118 @@
+main proc
+mov eax,1011b
+mov ebx,0011b
+AND eax,ebx
+
+call writebin
+call crlf
+
+mov eax,1011b
+mov ebx,1111b
+OR eax,ebx
+
+call writebin
+call crlf
+
+mov eax,1011b
+mov ebx,1111b
+XOR eax,ebx
+
+call writebin
+call crlf
+
+mov eax,1011b
+NOT eax
+call writebin
+call crlf
+
+mov eax,1011b
+mov ebx,1111b
+TESt eax,ebx
+
+call writebin
+call crlf
+
+mov eax,0
+mov eax,00001010b
+SHL eax,1
+call writebin
+call crlf
+
+mov eax,0
+mov eax,00001010b
+SHL eax,2
+call writebin
+call crlf
+
+mov eax,0
+mov eax,00001010b
+SHR eax,1
+call writebin
+call crlf
+
+mov eax,0
+mov eax,00001010b
+SAL eax,1
+call writebin
+call crlf
+
+mov eax,0
+mov eax,11001010b
+SAR eax,1
+call writebin
+call crlf
+
+mov al,0
+mov al,11000011b
+ROR al,1
+call writebin
+call crlf
+
+mov al,0
+mov al,11000011b
+ROL al,1
+call writebin
+call crlf
+
+mov al,0
+mov al,11000011b
+RCL al,1
+call writebin
+call crlf
+
+mov al,0
+mov al,11000011b
+RCR al,1
+call writebin
+call crlf
+
+mov ebx,0
+mov eax,0
+mov bx,11110000b
+call writebin
+call crlf
+shl bx,0100b
+mov eax,ebx
+call writebin
+call crlf
+
+mov ebx,0
+mov eax,0
+mov bx,00110011b
+call writebin
+call crlf
+shl bx,0100b
+mov eax,ebx
+call writebin
+call crlf
+
+mov ebx,0
+mov eax,0
+mov bx,00000111b
+
+shl bx,4
+mov eax,ebx
+call writebin
+call crlf
+call writeint
+
